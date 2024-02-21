@@ -1,7 +1,10 @@
 # Coffee - React + TypeScript + Vite
-<a href="https://coffee-kgefi1q9t-lucasrvasconcelos.vercel.app/" target="_blank"> Teste</a>
+
 <img src="public/images/projeto.png">
 
+ps: diego me controta 🤞🚀
+
+Veja como ficou a aplicação, clique no link abaixo
 - [ Deploy ](https://coffee-kgefi1q9t-lucasrvasconcelos.vercel.app/)
 
 Instruções para instalação do projeto:
