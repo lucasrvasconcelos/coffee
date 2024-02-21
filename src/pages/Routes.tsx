@@ -9,6 +9,10 @@ import { Orders } from './orders'
 export function RouterApp() {
   return (
     <Routes>
+      <Route path="/" element={<LayoutDefault />}>
+        <Route path="/" element={<span>TESTES LUCAS</span>}></Route>
+      </Route>
+
       <Route path="/coffee" element={<LayoutDefault />}>
         <Route path="/coffee" element={<Home />}></Route>
         <Route path="/coffee/orders" element={<Orders />}></Route>
