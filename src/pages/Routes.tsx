@@ -10,17 +10,13 @@ export function RouterApp() {
   return (
     <Routes>
       <Route path="/" element={<LayoutDefault />}>
-        <Route path="/" element={<span>TESTES LUCAS</span>}></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/orders" element={<Orders />}></Route>
       </Route>
 
-      <Route path="/coffee" element={<LayoutDefault />}>
-        <Route path="/coffee" element={<Home />}></Route>
-        <Route path="/coffee/orders" element={<Orders />}></Route>
-      </Route>
-
-      <Route path="/coffee" element={<LayoutCheckout />}>
-        <Route path="/coffee/checkout" element={<CheckOut />}></Route>
-        <Route path="/coffee/success" element={<Success />}></Route>
+      <Route path="/" element={<LayoutCheckout />}>
+        <Route path="/checkout" element={<CheckOut />}></Route>
+        <Route path="/success" element={<Success />}></Route>
       </Route>
     </Routes>
   )
