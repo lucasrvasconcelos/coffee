@@ -6,7 +6,7 @@ interface GoToHomeProps {
 export function GoToHome({ className, ...res }: GoToHomeProps) {
   return (
     <Link
-      to={'/coffee/'}
+      to={'/'}
       className={
         className ||
         'flex-1 h-fit py-2 px-4 bg-purple uppercase font-baloo font-bold text-white rounded-md hover:opacity-90 text-center'

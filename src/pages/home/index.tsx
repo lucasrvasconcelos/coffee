@@ -6,7 +6,7 @@ export function Home() {
   const products = [
     {
       id: 1,
-      image: '/assets/images/tradicional.png',
+      image: 'images/tradicional.png',
       type: ['tradicional', 'com leite'],
       title: 'Expresso Tradicional',
       price: 9.9,
@@ -14,7 +14,7 @@ export function Home() {
     },
     {
       id: 2,
-      image: '/assets/images/americano.png',
+      image: 'images/americano.png',
       type: ['tradicional'],
       title: 'Expresso Americano',
       price: 9.9,
@@ -22,7 +22,7 @@ export function Home() {
     },
     {
       id: 3,
-      image: '/assets/images/expresso-cremoso.png',
+      image: 'images/expresso-cremoso.png',
       type: ['tradicional'],
       title: 'Expresso Cremoso',
       price: 9.9,
@@ -30,7 +30,7 @@ export function Home() {
     },
     {
       id: 4,
-      image: '/assets/images/expresso-gelado.png',
+      image: 'images/expresso-gelado.png',
       type: ['tradicional', 'gelado'],
       title: 'Expresso Gelado',
       price: 9.9,
@@ -38,7 +38,7 @@ export function Home() {
     },
     {
       id: 5,
-      image: '/assets/images/cafe-com-leite.png',
+      image: 'images/cafe-com-leite.png',
       type: ['tradicional', 'com leite'],
       title: 'Café com Leite',
       price: 9.9,
@@ -46,7 +46,7 @@ export function Home() {
     },
     {
       id: 6,
-      image: '/assets/images/latte.png',
+      image: 'images/latte.png',
       type: ['tradicional', 'com leite'],
       title: 'Latte',
       price: 9.9,
@@ -55,7 +55,7 @@ export function Home() {
     },
     {
       id: 7,
-      image: '/assets/images/capuccino.png',
+      image: 'images/capuccino.png',
       type: ['tradicional', 'com leite'],
       title: 'Capuccino',
       price: 9.9,
@@ -64,7 +64,7 @@ export function Home() {
     },
     {
       id: 8,
-      image: '/assets/images/macchiato.png',
+      image: 'images/macchiato.png',
       type: ['tradicional', 'com leite'],
       title: 'Macchiato',
       price: 9.9,
@@ -73,7 +73,7 @@ export function Home() {
     },
     {
       id: 9,
-      image: '/assets/images/mocaccino.png',
+      image: 'images/mocaccino.png',
       type: ['tradicional', 'com leite'],
       title: 'Mocaccino',
       price: 9.9,
@@ -81,7 +81,7 @@ export function Home() {
     },
     {
       id: 10,
-      image: '/assets/images/chocolate-quente.png',
+      image: 'images/chocolate-quente.png',
       type: ['especial', 'com leite'],
       title: 'Chocolate Quente',
       price: 9.9,
@@ -90,7 +90,7 @@ export function Home() {
     },
     {
       id: 11,
-      image: '/assets/images/cubano.png',
+      image: 'images/cubano.png',
       type: ['especial', 'alcoólico', 'gelado'],
       title: 'Cubano',
       price: 9.9,
@@ -99,7 +99,7 @@ export function Home() {
     },
     {
       id: 12,
-      image: '/assets/images/havaiano.png',
+      image: 'images/havaiano.png',
       type: ['especial'],
       title: 'Havaiano',
       price: 9.9,
@@ -107,7 +107,7 @@ export function Home() {
     },
     {
       id: 13,
-      image: '/assets/images/arabe.png',
+      image: 'images/arabe.png',
       type: ['especial'],
       title: 'Árabe',
       price: 9.9,
@@ -115,7 +115,7 @@ export function Home() {
     },
     {
       id: 14,
-      image: '/assets/images/irlandes.png',
+      image: 'images/irlandes.png',
       type: ['especial', 'alcoólico'],
       title: 'Irlandês',
       price: 9.9,

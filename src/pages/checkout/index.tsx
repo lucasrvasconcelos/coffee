@@ -305,7 +305,7 @@ export function CheckOut() {
             <div>
               {quantityOrders ? (
                 <Link
-                  to={'/coffee/orders'}
+                  to={'/orders'}
                   className="font-roboto hover:opacity-90 flex justify-center items-center text-lg uppercase font-bold py-1 text-white bg-yellow ring-1 ring-yellow rounded-md"
                 >
                   Meus pedidos
@@ -351,7 +351,7 @@ export function CheckOut() {
             false
           )}
           <Link
-            to={'/coffee/'}
+            to={'/'}
             className="flex items-center justify-center w-full mt-4 py-3 rounded-md bg-purple text-white uppercase font-bold font-roboto hover:opacity-90"
           >
             Voltar para seleção de itens

@@ -50,7 +50,7 @@ export default function Cart() {
                   <DeleteCart />
                   <Link
                     onClick={() => setOpen((state) => !state)}
-                    to={'/coffee/checkout'}
+                    to={'/checkout'}
                     className="bg-yellow_dark text-background hover:opacity-90 inline-flex items-center justify-center rounded-[4px] px-[15px] font-medium leading-none focus:shadow-[0_0_0_2px] focus:outline-none py-3"
                   >
                     Finalizar

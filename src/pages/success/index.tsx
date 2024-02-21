@@ -86,7 +86,7 @@ export function Success() {
             Não foi localizado pedidos para você
           </span>
           <Link
-            to={'/coffee/'}
+            to={'/'}
             className="py-2 px-4 bg-purple uppercase font-baloo font-bold text-white rounded-md hover:opacity-90"
           >
             Voltar para loja
@@ -95,7 +95,7 @@ export function Success() {
       ) : (
         <div className="flex gap-2">
           <Link
-            to={'/coffee/orders'}
+            to={'/orders'}
             className="flex-1 h-fit py-2 px-4 bg-yellow uppercase font-baloo font-bold text-white rounded-md hover:opacity-90 text-center"
           >
             Meus pedidos

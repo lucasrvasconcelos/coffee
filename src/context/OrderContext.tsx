@@ -141,7 +141,7 @@ export function OderContextProvider({ children }: OderConstextProviderProps) {
     setOrder((state) => [...state, newOrder])
     setPreOrder([])
     toast.success('Pedido registrado com sucesso')
-    navigate('/coffee/success')
+    navigate('/success')
   }
 
   return (

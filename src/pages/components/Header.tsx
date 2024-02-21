@@ -10,13 +10,13 @@ export function Header() {
   const location = useLocation()
   return (
     <header className=" flex justify-between w-full px-40 py-8 fixed z-[1]">
-      <Link to={'/coffee'}>
+      <Link to={'/'}>
         <img src={logo} alt="Logo empresa" className="rounded-md h-20" />
       </Link>
       <div className="flex gap-3 items-center justify-center">
-        {quantityOrders && location.pathname !== '/coffee/orders' ? (
+        {quantityOrders && location.pathname !== '/orders' ? (
           <Link
-            to={'/coffee/orders'}
+            to={'/orders'}
             className="bg-yellow_light text-yellow_dark flex items-center justify-center gap-1 p-2 rounded-md font-roboto text-sm font-semibold"
           >
             <Planet size={22} className="text-yellow" weight="fill" />
