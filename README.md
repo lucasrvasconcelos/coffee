@@ -1,10 +1,8 @@
-# React + TypeScript + Vite
+# Coffee - React + TypeScript + Vite
 
-```html
-<img src="" alt="" srcset="" />
-```
+<img src="public/images/projeto.png">
 
-- [Deploy da aplicação](https://coffee-kgefi1q9t-lucasrvasconcelos.vercel.app/)
+- [ Deploy ](https://coffee-kgefi1q9t-lucasrvasconcelos.vercel.app/)
 
 Instruções para instalação do projeto:
 
