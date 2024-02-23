@@ -29,7 +29,7 @@ export default {
         background_gradient: `linear-gradient(-45deg, #DBAC2C, #8047F8)`,
       },
       screens: {
-        mobile: '320px',
+        mobile: '435px',
       },
     },
   },

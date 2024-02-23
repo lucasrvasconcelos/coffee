@@ -11,11 +11,13 @@ export function Orders() {
   return (
     <main className="lg:p-40 py-40 px-8 flex flex-col">
       {quantityOrders ? (
-        <div className="flex justify-center items-start  rounded-md py-4 min-w-[320px] ring-1 ring-base_hover max-h-[60vh] overflow-auto">
-          <table className="font-baloow-full text-left border-collapse w-full">
-            <TrHeader />
-            <TrItens />
-          </table>
+        <div className="flex justify-center items-start rounded-md min-w-[320px] ring-1 ring-base_hover max-h-[60vh] ">
+          <div className="w-full overflow-auto py-4">
+            <table className="font-baloo text-left border-collapse block">
+              <TrHeader />
+              <TrItens />
+            </table>
+          </div>
         </div>
       ) : (
         <span className=" text-2xl flex items-center gap-2">

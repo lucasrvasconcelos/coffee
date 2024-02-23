@@ -10,7 +10,7 @@ export function Success() {
   const { order, quantityOrders } = useContext(OrderContext)
 
   return (
-    <main className="grid grid-cols-1 md:grid-cols-2  px-2 md:px-40 py-14 md:py-28 gap-x-24 gap-y-10 min-h-[100vh]">
+    <main className="grid grid-cols-1 md:grid-cols-2  px-2 lg:px-40 py-14 md:py-28 gap-x-24 gap-y-10 min-h-[100vh]">
       {quantityOrders ? (
         <div>
           <h1 className="text-3xl font-bold text-yellow_dark font-baloo">
@@ -93,10 +93,10 @@ export function Success() {
           </Link>
         </div>
       ) : (
-        <div className="flex gap-2">
+        <div className="flex gap-2 items-stretch justify-center">
           <Link
             to={'/orders'}
-            className="flex-1 h-fit py-2 px-4 bg-yellow uppercase font-baloo font-bold text-white rounded-md hover:opacity-90 text-center"
+            className="flex-1 h-fit py-2 p-0 lg:px-4  bg-yellow uppercase font-baloo font-bold text-white rounded-md hover:opacity-90 text-center"
           >
             Meus pedidos
           </Link>

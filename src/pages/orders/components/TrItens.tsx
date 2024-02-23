@@ -12,7 +12,7 @@ export function TrItens() {
         return (
           <tr
             key={order.idOrder}
-            className="text-left border-collapse min-w-full font-baloo p-8 border-2 border-base_card text-sm"
+            className="text-left border-collapse min-w-full font-baloo p-8 border-2 border-base_card text-sm px-10"
           >
             <Td>{order.idOrder}</Td>
             <Td className="font-bold px-[18px] text-green-700">
