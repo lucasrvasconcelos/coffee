@@ -8,8 +8,8 @@ export function DeleteCart() {
   return (
     <AlertDialog.Root>
       <AlertDialog.Trigger asChild>
-        <button className=" inline-flex h-[35px] items-center justify-center rounded-[4px] bg-background px-[15px] font-medium leading-none outline-none hover:opacity-90 transition-colors py-3">
-          Limpar carrinho
+        <button className=" inline-flex items-center justify-center rounded-[4px] bg-background  font-medium leading-none outline-none hover:opacity-90 transition-colors">
+          Limpar
         </button>
       </AlertDialog.Trigger>
       <AlertDialog.Portal>

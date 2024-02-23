@@ -7,7 +7,7 @@ export function ItemsCart({ ...rest }) {
   const { preOrder } = useContext(OrderContext)
   return (
     <ScrollArea.Root
-      className="w-[100%] h-[325px] rounded overflow-hidden pr-4"
+      className="w-[100%] h-[325px] rounded overflow-hidden md:pr-4"
       {...rest}
     >
       <ScrollArea.Viewport className="w-full h-full rounded">

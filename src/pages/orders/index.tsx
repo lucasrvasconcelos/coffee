@@ -9,9 +9,9 @@ export function Orders() {
   const { quantityOrders } = useContext(OrderContext)
 
   return (
-    <main className="p-40 flex flex-col">
+    <main className="lg:p-40 py-40 px-8 flex flex-col">
       {quantityOrders ? (
-        <div className="flexjustify-center items-start  rounded-md py-4 min-w-[750px] ring-1 ring-base_hover max-h-[60vh] overflow-auto">
+        <div className="flex justify-center items-start  rounded-md py-4 min-w-[320px] ring-1 ring-base_hover max-h-[60vh] overflow-auto">
           <table className="font-baloow-full text-left border-collapse w-full">
             <TrHeader />
             <TrItens />

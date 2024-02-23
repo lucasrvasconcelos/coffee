@@ -44,20 +44,20 @@ export default function Cart() {
 
           <div className="mt-[25px] flex justify-end">
             <TotalOrder sumOrder={subTotalOrder} />
-            <Dialog.Close asChild>
-              {preOrder.length && (
-                <>
-                  <DeleteCart />
-                  <Link
-                    onClick={() => setOpen((state) => !state)}
-                    to={'/checkout'}
-                    className="bg-yellow_dark text-background hover:opacity-90 inline-flex items-center justify-center rounded-[4px] px-[15px] font-medium leading-none focus:shadow-[0_0_0_2px] focus:outline-none py-3"
-                  >
-                    Finalizar
-                  </Link>
-                </>
-              )}
-            </Dialog.Close>
+            {preOrder.length ? (
+              <div className="flex items-center justify-center gap-4">
+                <DeleteCart />
+                <Link
+                  onClick={() => setOpen((state) => !state)}
+                  to={'/checkout'}
+                  className="bg-yellow_dark text-background hover:opacity-90 inline-flex items-center justify-center rounded-[4px] px-[15px] font-medium leading-none focus:shadow-[0_0_0_2px] focus:outline-none py-3"
+                >
+                  Finalizar
+                </Link>
+              </div>
+            ) : (
+              false
+            )}
           </div>
           <Dialog.Close asChild>
             <button className="text-yellow_dark absolute right-2 top-3 focus:shadow-md focus:shadow-black">

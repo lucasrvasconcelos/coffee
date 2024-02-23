@@ -124,19 +124,19 @@ export function Home() {
   ]
 
   return (
-    <main className="px-4 md:px-40 relative">
-      <div className="flex items-start justify-center gap-14 pt-[12rem] pb-24">
+    <main className="px-8 md:px-24 relative">
+      <div className="flex items-center lg:items-start flex-col-reverse justify-center gap-8 lg:flex-row lg:gap-14 pt-[12rem] pb-24">
         <div>
           <h1 className="font-baloo font-bold text-5xl text-base_title">
             Encontre o café perfeito <br />
             para qualquer hora do dia
           </h1>
-          <p className="mt-4 font-baloo text-base_subtitle text-[1.2rem]">
-            Com o Coffee Delivery você recebe seu café onde estiver, a<br />
-            qualquer hora
+          <p className="mt-4 font-baloo text-base_subtitle text-[1.2rem] max-w-[450px]">
+            Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
+            hora !
           </p>
 
-          <ul className="list-none grid grid-cols-2 gap-5 mt-14 text-base_text">
+          <ul className="list-none grid grid-cols-1 sm:grid-cols-2 gap-5 mt-14 text-base_text">
             <li className="flex justify-center items-center w-fit gap-3">
               <ShoppingCart
                 size={24}
@@ -175,7 +175,7 @@ export function Home() {
           </ul>
         </div>
         <div>
-          <img src={banner} alt="Imagem café" />
+          <img src={banner} alt="Imagem café" className="lg:flex" />
         </div>
       </div>
 

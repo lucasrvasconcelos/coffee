@@ -9,9 +9,17 @@ export function Header() {
   const { quantityOrders } = useContext(OrderContext)
   const location = useLocation()
   return (
-    <header className=" flex justify-between w-full px-40 py-8 fixed z-[1]">
+    <header className=" flex justify-between w-full px-4 md:px-40 py-8 fixed z-[1]">
       <Link to={'/'}>
-        <img src={logo} alt="Logo empresa" className="rounded-md h-20" />
+        <img
+          src={logo}
+          alt="Logo empresa"
+          className={
+            quantityOrders && location.pathname !== '/orders'
+              ? 'rounded-md h-14 absolute top-20'
+              : 'rounded-md h-20'
+          }
+        />
       </Link>
       <div className="flex gap-3 items-center justify-center">
         {quantityOrders && location.pathname !== '/orders' ? (

@@ -15,13 +15,18 @@ export function MineCard({ itensOrder }: MineCardProps) {
   }
 
   return (
-    <li className="flex items-center justify-between px-2 py-4">
+    <li
+      className="md:flex md:items-center md:justify-between px-2 py-4
+                 grid grid-cols-2 gap-y-0"
+    >
       <img src={itensOrder.imageProduct} alt="" className="size-16" />
-      <div className="mr-6 flex-col flex gap-2 font-baloo text-smfont-baloo text-sm">
-        <span className="ml-3 font-bold">{itensOrder.nameProduct}</span>
+      <div className="md:mr-6 flex-col flex gap-2 font-baloo text-sm">
+        <span className="-ml-7 md:ml-4 font-bold text-center md:text-left">
+          {itensOrder.nameProduct}
+        </span>
 
-        <div className="flex items-center justify-center w-48 px-4 gap-4 ">
-          <div className="bg-base_button flex items-center justify-center rounded-md w-full">
+        <div className="flex items-center flex-col md:flex-row justify-center md:w-48 px-4 gap-4 ">
+          <div className="bg-base_button flex items-center justify-center rounded-md w-[80px] md:w-full">
             <button
               type="button"
               onClick={() => updateItemsPreOrder(itensOrder.idItensPed, -1)}

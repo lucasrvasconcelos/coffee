@@ -85,7 +85,7 @@ export function CheckOut() {
 
   return (
     <form
-      className="grid grid-cols-2 px-40 py-8 gap-8"
+      className="grid grid-cols-1 xl:grid-cols-2 px-4 md:px-40 py-8 gap-8"
       onSubmit={handleSubmit(handleCreateNewOrder)}
     >
       <div>
@@ -104,8 +104,8 @@ export function CheckOut() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-5 outline-none border-none px-8 py-1">
-            <div className="relative">
+          <div className="flex flex-col gap-5 outline-none border-none px-8 py-1 ">
+            <div className="relative flex flex-col flex-1 max-w-48">
               <input
                 type="text"
                 id="cep"
@@ -134,8 +134,8 @@ export function CheckOut() {
               </span>
             </div>
 
-            <div className="flex items-center justify-center gap-3">
-              <div className="relative">
+            <div className="flex items-center justify-center gap-3 w-full flex-col mobile:flex-row flex-1">
+              <div className="relative w-full lg:w-fit">
                 <input
                   type="text"
                   id="numero"
@@ -143,34 +143,40 @@ export function CheckOut() {
                   maxLength={999999}
                   placeholder="numero"
                   {...register('numero')}
-                  className="outline-none bg-base_input text-base_text px-3 py-2 ring-1 rounded-md ring-slate-300 w-40"
+                  className="outline-none bg-base_input text-base_text px-3 py-2 ring-1 rounded-md ring-slate-300 lg:w-28 w-full"
                 />
                 <span className="absolute -top-[18px] lowercase left-1 text-xs animate-pulse text-red-500 font-bold">
                   {errors?.numero?.message?.toString()}
                 </span>
               </div>
-              <input
-                type="text"
-                id="complemento"
-                placeholder="complemento (Opcional)"
-                {...register('complemento')}
-                className="outline-none bg-base_input text-base_text px-3 py-2 ring-1 rounded-md ring-slate-300 flex-1"
-              />
+              <div className="relative w-full ">
+                <input
+                  type="text"
+                  id="complemento"
+                  placeholder="complemento (Opcional)"
+                  {...register('complemento')}
+                  className="outline-none bg-base_input text-base_text px-3 py-2 ring-1 rounded-md ring-slate-300 w-full"
+                />
+                <span className="absolute -top-[18px] lowercase left-1 text-xs animate-pulse text-red-500 font-bold">
+                  {errors?.complemento?.message?.toString()}
+                </span>
+              </div>
             </div>
-            <div className="flex items-center justify-center gap-3 w-full ">
-              <div className="relative">
+
+            <div className="flex items-start justify-center gap-5 w-full flex-col md:flex-row">
+              <div className="relative w-full flex flex-col ">
                 <input
                   type="text"
                   id="bairro"
                   placeholder="bairro"
                   {...register('bairro')}
-                  className="outline-none bg-base_input text-base_text px-3 py-2 ring-1 rounded-md ring-slate-300 w-28"
+                  className="outline-none bg-base_input text-base_text px-3 py-2 ring-1 rounded-md ring-slate-300 w-full "
                 />
                 <span className="absolute -top-[18px] lowercase left-1 text-xs animate-pulse text-red-500 font-bold">
                   {errors?.bairro?.message?.toString()}
                 </span>
               </div>
-              <div className="flex-1 relative">
+              <div className="relative w-full flex flex-col">
                 <input
                   type="text"
                   id="cidade"
@@ -225,8 +231,8 @@ export function CheckOut() {
               </div>
             </div>
 
-            <div className="flex mt-8 justify-center gap-2">
-              <div className="flex w-full">
+            <div className="flex mt-8 justify-center gap-2 flex-wrap">
+              <div className="flex flex-1">
                 <input
                   type="radio"
                   value="credito"
@@ -247,7 +253,7 @@ export function CheckOut() {
                 </label>
               </div>
 
-              <div className="flex w-full">
+              <div className="flex flex-1">
                 <input
                   type="radio"
                   value="debito"
@@ -268,7 +274,7 @@ export function CheckOut() {
                 </label>
               </div>
 
-              <div className="flex w-full">
+              <div className="flex flex-1">
                 <input
                   type="radio"
                   value="dinheiro"
@@ -290,11 +296,11 @@ export function CheckOut() {
         </section>
       </div>
 
-      <div className="">
+      <div>
         <h3 className="font-semibold  font-baloo text-xl text-base_subtitle">
           Produtos selecionados
         </h3>
-        <section className="p-8 bg-base_card rounded-md mt-4 relative">
+        <section className="p-4 md:p-8 bg-base_card rounded-md mt-4 relative">
           {existPreOrder ? (
             <ul className="overflow-auto max-h-[50vh] list-none flex flex-col">
               <ItemsCart

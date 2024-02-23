@@ -10,7 +10,7 @@ export function Success() {
   const { order, quantityOrders } = useContext(OrderContext)
 
   return (
-    <main className="grid grid-cols-2 px-40 py-28 gap-x-24 gap-y-10 min-h-[100vh]">
+    <main className="grid grid-cols-1 md:grid-cols-2  px-2 md:px-40 py-14 md:py-28 gap-x-24 gap-y-10 min-h-[100vh]">
       {quantityOrders ? (
         <div>
           <h1 className="text-3xl font-bold text-yellow_dark font-baloo">
@@ -81,7 +81,7 @@ export function Success() {
         />
       </div>
       {!quantityOrders ? (
-        <div className="flex flex-col items-end justify-center gap-8">
+        <div className="flex flex-col items-end justify-center gap-8 px-4">
           <span className="text-3xl font-baloo text-yellow_dark font-bold text-right">
             Não foi localizado pedidos para você
           </span>
