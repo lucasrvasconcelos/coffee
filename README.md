@@ -3,7 +3,7 @@
 <img src="public/images/projeto.png">
 
 Veja como ficou a aplicação, clique no link abaixo
-- [ Deploy ](https://coffee-kgefi1q9t-lucasrvasconcelos.vercel.app/)
+- [ Deploy ](https://coffee-two-snowy.vercel.app/)
 
 Instruções para instalação do projeto:
 
