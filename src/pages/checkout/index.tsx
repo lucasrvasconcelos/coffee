@@ -210,7 +210,7 @@ export function CheckOut() {
           <div className="bg-base_card rounded-md mt-4 px-8 py-10 relative">
             {setPayment === 'invalid_type' && (
               <div className="absolute -top-2 text-center left-0 w-full ">
-                <span className="bg-purple_light px-0 ml-20 mr-20  py-2 rounded-md ring-1 ring-purple_dark text-purple_dark font-semibold flex justify-center items-center gap-1">
+                <span className="bg-purple_light px-0 lg:ml-20 lg:mr-20  py-2 rounded-md ring-1 ring-purple_dark text-purple_dark font-semibold flex justify-center items-center gap-1">
                   <Warning size={22} weight="fill" />
                   Não esqueça da forma de pagamento
                 </span>
